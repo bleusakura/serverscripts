@@ -6,3 +6,6 @@ misc scripts used for server maintenance/quality of life bash stuff
 
 ### ip_notify.py
   - currently my server is on a dynamic ip so this script is used to send me an email if my ip ever changes
+
+### excludeTraffic.rules
+  - incoming connections to normal public ip for server bypasses VPN tunnel.
