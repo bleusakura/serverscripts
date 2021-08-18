@@ -1,0 +1,6 @@
+#!/bin/bash
+sudo service fail2ban restart
+sudo /usr/sbin/ddclient -daemon 300 -syslog
+sudo deluged
+sudo logreport
+sudo nft -f ~/scripts/net/excludeTraffic.rules
