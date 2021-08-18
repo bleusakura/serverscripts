@@ -1,0 +1,7 @@
+table inet excludeTraffic {
+   chain allowIncoming {
+     type filter hook input priority -100; policy accept;
+     udp dport xxxxx ct mark set 0x00000f41;
+     tcp dport xxxxx ct mark set 0x00000f41;
+   }
+}
